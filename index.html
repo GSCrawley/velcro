@@ -1,3 +1,192 @@
-<!-- 10% Velcro -->
+<!doctype>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <style>
+            body{
+                font-family: Helvetica;
+                font-size: 24px;
+            }
+            .home{
+                position: relative;
+                background-image: url(static/velcrostreet.png);
+                padding: 2em;
+                background-size: cover;
+                background-position: top center;
+                width: calc(100%);
+                height: 400px;
+                background-image: url(static/velcrostreet.png);
+                padding: 2em;
+            }
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Fx-fGCZYivs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            .band_name {
+                position: absolute;
+                left: 2em;
+                bottom: 2em;
+            }
+
+            .card {
+                width: 200px;
+                height: auto;
+            }
+
+            .card-image {
+                max-width: 200px;
+            }
+
+            .container {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            * {
+                box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+                color: black;
+            }
+
+            body {
+                font-family: 'Josefin Sans', sans-serif;
+            }
+
+            .navbar {
+                font-size: 18px;
+                background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+                border: 1px solid;
+                padding-bottom: 10px;
+            }
+
+            .band_logo {
+                display: inline-block;
+                background-image: url(static/velcro.jpg);
+                width: 150px;
+                height: 150px;
+                background-size: cover;
+                background-position: center;
+            }
+
+            .main-nav li {
+                text-align: center;
+                margin: 15px auto;
+            }
+
+            .logo {
+                display: inline-block;
+                font-size: 22px;
+                margin-top: 10px;
+                margin-left: 20px;
+            }
+
+            .container {
+                font-size: 18px;
+                background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+                border: 1px solid;
+                padding-bottom: 10px;
+            }
+
+            .card, .card1, .card2, .card3, .card4 {
+                padding: 10px;
+            }
+
+            .video {
+                font-size: 18px;
+                background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+                border: 1px solid;
+                padding: 10px;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <nav class="navbar">
+        <a href="#home" class="band_logo"></a>
+        <ul class="main-nav" id="js-menu">
+            <li>
+            <a href="#about" class="nav-links">About </a>
+            </li>
+            <li>
+            <a href="#video" class="nav-links"> Listen </a>
+            </li>
+        </nav>
+
+        <section class="home" id="home">
+
+            <div class="band_name">
+                <h1>10% Velcro</h1>
+                <p>
+                    10% Velcro is an all-woman quintette formed in Montréal, in October 2018!
+                </p>
+            </div>
+
+        </section>
+
+        <section id="about">
+
+<div class="container">
+
+
+            <div class="card">
+                <img src="static/Emma_Anders.png" class="card-image">
+                <h3>Emma Anders</h3>
+                <p>Guitar/Banjo, Vocals, Harmonica</p>
+            </div>
+
+            <div class="card1">
+                <img src="static/Lucy_Rose.png" class="card-image">
+                <h3>Lucy Rose Lambert</h3>
+                <p>Accordion, Vocals<p>
+            </div>
+
+            <div class="card2">
+                <img src="static/LeaXP.jpg" class="card-image">
+                <h3>Lea Grigne</h3>
+                <p>Clarinet</p>
+            </div>
+
+            <div class="card3">
+                <img src="static/Adele_Levayer.png" class="card-image">
+                <h3>Adèle Levayer</h3>
+                <p>Flute, Saxophone</p>
+            </div>
+
+            <div class="card4">
+                <h3>Stephanie Forget</h3>
+                <p>Violin, Mandolin, Vocals</p>
+            </div>
+
+</div>
+        </section>
+
+        <section id="video">
+            <div class="video">
+            <h2>HAVE A LISTEN!</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/urts4btKH4k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+</section>
+
+<div class="container">
+  <form action="action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+
+
+
+
+    </body>
+</html>
