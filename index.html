@@ -16,7 +16,6 @@
                 background-position: top center;
                 width: calc(100%);
                 height: 400px;
-                background-image: url(static/velcrostreet.png);
                 padding: 2em;
             }
 
@@ -53,6 +52,7 @@
             }
 
             .navbar {
+                display: flex;
                 font-size: 18px;
                 background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
                 border: 1px solid;
@@ -60,7 +60,7 @@
             }
 
             .band_logo {
-                display: inline-block;
+                display: flex;
                 background-image: url(static/velcro.jpg);
                 width: 150px;
                 height: 150px;
@@ -69,6 +69,7 @@
             }
 
             .main-nav li {
+                display: flex;
                 text-align: center;
                 margin: 15px auto;
             }
@@ -87,8 +88,8 @@
                 padding-bottom: 10px;
             }
 
-            .card, .card1, .card2, .card3, .card4 {
-                padding: 10px;
+            .card, .card1, .card2, .card3 {
+                padding: 30px;
             }
 
             .video {
@@ -98,6 +99,19 @@
                 padding: 10px;
             }
 
+            .video1, .video2 {
+                background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+                padding: 10px
+                display: flex;
+                align-items: center
+                justify-content: space-around;
+            }
+
+            <!-- .video2 {
+                display: flex;
+                flex-direction: row-reverse;
+            } -->
+
         </style>
     </head>
     <body>
@@ -106,11 +120,18 @@
         <a href="#home" class="band_logo"></a>
         <ul class="main-nav" id="js-menu">
             <li>
-            <a href="#about" class="nav-links">About </a>
+            <a href="#about" class="nav-links">About! </a>
             </li>
             <li>
-            <a href="#video" class="nav-links"> Listen </a>
+            <a href="#video" class="nav-links"> Have a Listen! </a>
             </li>
+            <li>
+            <a href="#photos" class="nav-links"> Photo Gallery! </a>
+            </li>
+            <li>
+            <a href="#calendar" class="nav-links"> Upcoming Shows! </a>
+            </li>
+            </ul>
         </nav>
 
         <section class="home" id="home">
@@ -127,6 +148,16 @@
         <section id="about">
 
 <div class="container">
+    <div class="bio">
+        <h1>BIOGRAPHIE</h1>
+
+	<p>10% Velcro est un groupe de musique féminin formé en octobre 2018 à Montréal.
+        Ces musiciennes unissent leurs voix et multiples instruments pour proposer un voyage au cœur de la fusion du swing, blues, jazz, folk, rap, soul, klezmer et rumba.
+        À travers l’interprétation originale de standards et l’improvisation musicale, les musiciennes de 10% Velcro conjuguent chacune leurs influences pour communiquer leur énergie débordante et offrir à leur public une expérience mémorable </p>
+
+    <p>10% Velcro is a women's ensemble formed in October 2018 in Montreal.
+        These musicians unite their voices and multiple instruments to offer a journey into the fusion of swing, blues, jazz, folk, rap, soul, klezmer and rumba.
+        Through original interpretations of standards and musical improvisation, the musicians of 10% Velcro combine their colorful array of influences to convey their boundless energy and offer their audience a memorable experience.</p>
 
 
             <div class="card">
@@ -152,20 +183,19 @@
                 <h3>Adèle Levayer</h3>
                 <p>Flute, Saxophone</p>
             </div>
-
-            <div class="card4">
-                <h3>Stephanie Forget</h3>
-                <p>Violin, Mandolin, Vocals</p>
-            </div>
-
+</div>
 </div>
         </section>
 
         <section id="video">
-            <div class="video">
+            <div class=container>
+            <div class="video1">
             <h2>HAVE A LISTEN!</h2>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/urts4btKH4k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
             </div>
+
+
 </section>
 
 <div class="container">
