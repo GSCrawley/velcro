@@ -86,11 +86,31 @@
                 background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
                 border: 1px solid;
                 padding-bottom: 10px;
+                display: grid;
+                grid-template-columns: repeat(4);
+                grid-gap: 15px;
+                grid-template-area:  "a b c d"
             }
 
             .card, .card1, .card2, .card3 {
-                padding: 30px;
+                padding: 20px;
             }
+
+            .card {
+                grid-area: a;
+            }
+
+            .card1 {
+                grid-area: b;
+            }
+
+            .card2 {
+                grid-area; c;
+            }
+
+            .card3 (
+                grid-area; d;
+            )
 
             .video {
                 font-size: 18px;
@@ -129,6 +149,9 @@
             <a href="#photos" class="nav-links"> Photo Gallery! </a>
             </li>
             <li>
+            <a href="#contact" class="nav-links"> Contact Us! </a>
+            </li>
+            <li>
             <a href="#calendar" class="nav-links"> Upcoming Shows! </a>
             </li>
             </ul>
@@ -149,17 +172,23 @@
 
 <div class="container">
     <div class="bio">
-        <h1>BIOGRAPHIE</h1>
 
-	<p>10% Velcro est un groupe de musique féminin formé en octobre 2018 à Montréal.
-        Ces musiciennes unissent leurs voix et multiples instruments pour proposer un voyage au cœur de la fusion du swing, blues, jazz, folk, rap, soul, klezmer et rumba.
-        À travers l’interprétation originale de standards et l’improvisation musicale, les musiciennes de 10% Velcro conjuguent chacune leurs influences pour communiquer leur énergie débordante et offrir à leur public une expérience mémorable </p>
-
+        <h1>BAND BIO / BIOGRAPHIE DE LA GROUPE </h1>
+        <br>
+    <br>
+<div id="english">
     <p>10% Velcro is a women's ensemble formed in October 2018 in Montreal.
         These musicians unite their voices and multiple instruments to offer a journey into the fusion of swing, blues, jazz, folk, rap, soul, klezmer and rumba.
         Through original interpretations of standards and musical improvisation, the musicians of 10% Velcro combine their colorful array of influences to convey their boundless energy and offer their audience a memorable experience.</p>
+</div>
+<br>
+<div id="french">
+    <p>10% Velcro est un groupe de musique féminin formé en octobre 2018 à Montréal.
+    Ces musiciennes unissent leurs voix et multiples instruments pour proposer un voyage au cœur de la fusion du swing, blues, jazz, folk, rap, soul, klezmer et rumba.
+    À travers l’interprétation originale de standards et l’improvisation musicale, les musiciennes de 10% Velcro conjuguent chacune leurs influences pour communiquer leur énergie débordante et offrir à leur public une expérience mémorable </p>
+</div>
 
-
+<div class="bios">
             <div class="card">
                 <img src="static/Emma_Anders.png" class="card-image">
                 <h3>Emma Anders</h3>
@@ -185,10 +214,11 @@
             </div>
 </div>
 </div>
+</div>
         </section>
 
         <section id="video">
-            <div class=container>
+            <div class="container">
             <div class="video1">
             <h2>HAVE A LISTEN!</h2>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/urts4btKH4k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -198,6 +228,17 @@
 
 </section>
 
+<section id ="photos">
+    <div class="container">
+    <div id="cp_widget_06eae96f-4b28-4ce3-a480-8ba8de7cd08d">...</div><script type="text/javascript">
+var cpo = []; cpo["_object"] ="cp_widget_06eae96f-4b28-4ce3-a480-8ba8de7cd08d"; cpo["_fid"] = "AEOAWneoQyil";
+var _cpmp = _cpmp || []; _cpmp.push(cpo);
+(function() { var cp = document.createElement("script"); cp.type = "text/javascript";
+cp.async = true; cp.src = "//www.cincopa.com/media-platform/runtime/libasync.js";
+var c = document.getElementsByTagName("script")[0];
+c.parentNode.insertBefore(cp, c); })(); </script>
+
+<section id ="contact">
 <div class="container">
   <form action="action_page.php">
 
