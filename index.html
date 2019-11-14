@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title></title>
         <style>
+
             body{
                 font-family: Helvetica;
                 font-size: 24px;
@@ -32,6 +33,7 @@
 
             .card-image {
                 max-width: 200px;
+                justify-content: space-around;
             }
 
             .container {
@@ -88,20 +90,18 @@
                 padding: 20px;
                 display: flex;
                 justify-content: space-between;
+            }
+
+            .grid {
                 grid-template-columns: repeat(4);
                 grid-gap: 15px;
                 grid-template-area: "a b c d";
             }
 
-            /* #bios {
-
-                position: sticky;
-            } */
-
             .card, {
                 display: flex;
                 padding-right: 20px;
-                position:absolute;
+                position:static;
             }
 
             .card1, .card2, .card3  {
@@ -201,6 +201,7 @@
 
 <!-- <div class="container"> -->
 <div id="bios">
+    <div class="grid>"
             <div class="card">
                 <img src="static/Emma_Anders.png" class="card-image">
                 <h3>Emma Anders</h3>
@@ -236,7 +237,7 @@
             Ces musiciennes unissent leurs voix et multiples instruments pour proposer un voyage au cœur de la fusion du swing, blues, jazz, folk, rap, soul, klezmer et rumba.
             À travers l’interprétation originale de standards et l’improvisation musicale, les musiciennes de 10% Velcro conjuguent chacune leurs influences pour communiquer leur énergie débordante et offrir à leur public une expérience mémorable </p>
         </div>
-
+    </div>
         </div>
     </div>
 </div>
@@ -257,15 +258,16 @@
 </div>
 </section>
 
+<section id="photos">
 <div id="cp_widget_4012757b-f34a-472d-ad02-d33c8c1c7254">...</div><script type="text/javascript">
 var cpo = []; cpo["_object"] ="cp_widget_4012757b-f34a-472d-ad02-d33c8c1c7254"; cpo["_fid"] = "A0JAPkO8TWUK";
 var _cpmp = _cpmp || []; _cpmp.push(cpo);
 (function() { var cp = document.createElement("script"); cp.type = "text/javascript";
 cp.async = true; cp.src = "//www.cincopa.com/media-platform/runtime/libasync.js";
 var c = document.getElementsByTagName("script")[0];
-c.parentNode.insertBefore(cp, c); })(); </script>
+c.parentNode.insertBefore(cp, c); })(); </script></section>
 
-<section id ="contact">
+<section id ="contact"></section>
 <div class="container">
   <form action="action_page.php">
     <h3> Leave a comment! </h3>
