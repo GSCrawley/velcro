@@ -19,7 +19,7 @@
             padding: 2em;
             background-size: cover;
             background-position: center;
-            width: calc(100%);
+            width: 93.25%;
             height: 400px;
             padding: 2em;
         }
@@ -53,13 +53,18 @@
         body {
             display: inline-block;
             font-family: 'Josefin Sans', sans-serif;
+            margin: 0; 
+            text-underline-position: unset;
         }
+
+        a { 
+            text-decoration: none; 
+        } 
 
         .navbar {
             display: flex;
             font-size: 18px;
             background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
-            border: 1px solid;
             padding: 10px;
         }
 
@@ -99,6 +104,11 @@
             text-align: center;
         }
 
+        #english, #french {
+            width: 800px;
+            margin: auto;
+        }
+
         .bios {
             box-sizing: border-box;
             padding: 5px;
@@ -128,11 +138,11 @@
         }
 
         .card2 {
-            grid-area; c;
+            grid-area: c;
         }
 
         .card3 {
-            grid-area; d;
+            grid-area: d;
         }
 
         .video {
@@ -145,7 +155,7 @@
         .video1 {
             background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
             display: inline-flex;
-            align-items: center
+            align-items: center;
             justify-content: space-between;
         }
 
