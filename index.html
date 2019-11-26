@@ -108,6 +108,10 @@
             margin: auto;
         }
 
+        h3, p {
+            margin: 1rem 0 0 0;
+        }
+
         .bios {
             box-sizing: border-box;
             padding: 5px;
@@ -122,25 +126,25 @@
             grid-template-areas: "a b c d";
         }
 
-        .card, .card1, .card2, .card3  {
+        .card {
             display: inline-grid;
             padding: 20px;
             position: relative;
             }
 
-        .card {
+        .card1 {
             grid-area: a;
         }
 
-        .card1 {
+        .card2 {
             grid-area: b;
         }
 
-        .card2 {
+        .card3 {
             grid-area: c;
         }
 
-        .card3 {
+        .card4 {
             grid-area: d;
         }
 
@@ -158,11 +162,6 @@
             justify-content: space-between;
         }
 
-        /* iframe {
-            height: 100%;
-
-        } */
-
         .video2 {
             display: flex;
             /* align-items: center */
@@ -174,6 +173,7 @@
             color: white !important;
         }
         .msgButton {
+            margin-bottom: 10px;
             padding: 12px;
             background-color:violet;
             color: white;
@@ -187,7 +187,10 @@
         #contact {
             text-align: center;
         }
-
+        
+        p {
+            padding-bottom: 20px;
+        }
 
         @media screen and (min-width: 1151px) {
             main {
@@ -275,25 +278,25 @@
 <!-- <div class="container"> -->
 <div id="bios">
     <div class="grid">
-            <div class="card">
-                <img src="static/Emma_Anders.png" class="card-image">
-                <h3>Emma Anders</h3>
-                <p>Guitar/Banjo, Vocals, Harmonica</p>
-            </div>
-
-            <div class="card1">
-                <img src="static/Lucy_Rose.png" class="card-image">
-                <h3>Lucy Rose Lambert</h3>
-                <p>Accordion, Vocals<p>
-            </div>
-
-            <div class="card2">
+            <div class="card card1">
                 <img src="static/LeaXP.jpg" class="card-image">
                 <h3>Lea Grigne</h3>
                 <p>Clarinet</p>
             </div>
 
-            <div class="card3">
+            <div class="card card2">
+                <img src="static/Lucy_Rose.png" class="card-image">
+                <h3>Lucy Rose Lambert</h3>
+                <p>Accordion, Vocals<p>
+            </div>
+
+            <div class="card card3">
+                <img src="static/Emma_Anders.png" class="card-image">
+                <h3>Emma Anders</h3>
+                <p>Guitar/Banjo, Vocals, Harmonica</p>
+            </div>
+
+            <div class="card card4">
                 <img src="static/adele.jpg" class="card-image">
                 <h3>Adèle Levayer</h3>
                 <p>Flute, Saxophone</p>
